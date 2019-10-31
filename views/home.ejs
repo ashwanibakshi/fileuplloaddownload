@@ -1,0 +1,42 @@
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Document</title>
+ </head>
+ <body>
+      <form action="/" method="POST" enctype="multipart/form-data">
+      <input type="file" name="pic" id="pic"><br>
+      <input type="submit" value="upload file">
+    </form><br><br><br><br>
+    <% if(data.length > 0) {%>
+      <table>
+           <thead>
+               <tr>
+                   <td>
+                       images
+                   </td>
+                   <td>
+                       download
+                   </td>
+               </tr>
+           </thead>
+           <tbody>
+               <% for(var i=0; i< data.length; i++) {%>
+               <tr>
+                   <td>
+                 <img src="<%= data[i].picpath%>" alt="images" style="width:100px; height:100px;">
+                   </td>
+                   <td>
+                <form action="/download/<%= data[i]._id%>">
+                 <input type="submit" value="download">
+                </form>
+                   </td>
+               </tr>
+               <% } %>
+           </tbody>
+      </table>
+      <% } %>  
+ </body>
+ </html>

@@ -1,5 +1,9 @@
 # fileuplloaddownload
 
-first type npm install
+install the dependencies
 
-then type node app.js
+npm install
+
+now run the application
+
+node app.js

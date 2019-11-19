@@ -2,8 +2,8 @@
 
 install the dependencies
 
-npm install
+-- npm install
 
 now run the application
 
-node app.js
+-- node app.js

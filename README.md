@@ -1,4 +1,4 @@
-# fileuploaddownload
+# FileUploadDownload
 this is a simple file upload download app built using Node,Express,MongoDB,EJS and few other packages.
 
 Usage
